@@ -1,4 +1,17 @@
 #! /bin/bash
+# Script Name: <Linux-Kernel-Installer-script>
+# Description: <Determine and install correspond Linux Kernel.>
+# Author: <Kevin>
+# Version: 1.0.0
+# License: MIT License
+#
+# Usage:
+#   Run this script with appropriate permissions:
+#   Example: sudo ./script_name.sh
+#
+# Notes:
+#   - Ensure prerequisites are met before execution.
+#   - Modify variables as needed for your environment.
 if [ "$EUID" -ne 0 ]; then # Check root permisson
         echo "Error, your permisson is far from the absolute perfection. Please come again later after you have acquired what it truly is."
         exit 1
